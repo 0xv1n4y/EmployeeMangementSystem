@@ -43,7 +43,7 @@ public class DeleteCode extends HttpServlet {
 				ps.setString(1,name);
 				
 				int i=ps.executeUpdate();
-				out.print(i+"Record deleted");
+				out.print(i+"Record removed");
 				con.close();
 			}
 			catch(Exception ex)
